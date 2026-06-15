@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
+  color: white;
+}
+
+/* LEFT SIDE */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* RIGHT NAV */
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 10px;
+}
+.a-text{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    padding: 2px;
+    border-radius: 10px;
+}
+.a-text:hover{
+    color: #00bcd4;
+  box-shadow: rgb(23, 255, 216) 0 0 25px;
+}
+.nav a:hover {
+  color: #00bcd4;
+  box-shadow: rgb(0, 204, 255) 0 0 25px;
+  /* text-shadow: white 0 0 20px; */
+  border-radius: 10px;
+}
+
+/* =========================
+   TABLET (MD)
+========================= */
+@media (max-width: 992px) {
+  .header {
+    padding: 15px 25px;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .nav a {
+    font-size: 15px;
+  }
+}
+
+/* =========================
+   MOBILE (SM)
+========================= */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+}
